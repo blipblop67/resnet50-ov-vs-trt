@@ -19,10 +19,10 @@ def time_fn(fn, warmup=50, iters=500):
 
 def stats(times, batch=1):
     return dict(
-        mean_ms=times.mean(),
-        p50_ms=np.percentile(times, 50),
-        p95_ms=np.percentile(times, 95),
-        fps=batch * 1000 / times.mean(),
+        mean_ms=float(times.mean()),
+        p50_ms=float(np.percentile(times, 50)),
+        p95_ms=float(np.percentile(times, 95)),
+        fps=float(batch * 1000 / times.mean()),
     )
 
 
