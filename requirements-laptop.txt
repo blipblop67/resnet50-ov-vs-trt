@@ -20,7 +20,9 @@ ninja==1.13.2
 nncf==3.4.0
 numpy==2.4.6
 onnx==1.23.2
+onnx-ir==1.1.0
 onnxruntime==1.32.0
+onnxscript==0.7.2
 openvino==2026.4.1
 openvino-telemetry==2025.2.0
 packaging==26.3
