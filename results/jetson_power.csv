@@ -1,0 +1,5 @@
+config,samples,mean_power_w,mean_gpu_pct,peak_tj_c,above_idle_w
+idle,47,7.81,1.5,55.625,0.0
+fp32,61,21.04,97.5,64.781,13.23
+fp16,61,19.75,97.2,66.187,11.94
+int8,61,17.08,96.3,65.187,9.27

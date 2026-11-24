@@ -7,3 +7,4 @@ __pycache__/
 *.bin
 calib_images/
 data/
+results/raw/
