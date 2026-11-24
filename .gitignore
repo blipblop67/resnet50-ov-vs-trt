@@ -8,3 +8,4 @@ __pycache__/
 calib_images/
 data/
 results/raw/
+kernel.errors.txt
