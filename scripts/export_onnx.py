@@ -1,4 +1,6 @@
 import hashlib
+import os
+
 import torch
 import torchvision
 
@@ -12,8 +14,11 @@ torch.onnx.export(
     dynamic_axes={"input": {0: "batch"}, "logits": {0: "batch"}},
 )
 
-with open("models/resnet50.onnx", "rb") as f:
-    digest = hashlib.sha256(f.read()).hexdigest()
-with open("models/resnet50.onnx.sha256", "w") as f:
-    f.write(digest + "\n")
-print("exported, sha256:", digest)
+lines = []
+for p in ["models/resnet50.onnx", "models/resnet50.onnx.data"]:
+    if os.path.exists(p):
+        with open(p, "rb") as f:
+            lines.append(f"{hashlib.sha256(f.read()).hexdigest()}  {p}")
+with open("models/resnet50.onnx.sha256", "w", newline="\n") as f:
+    f.write("\n".join(lines) + "\n")
+print("\n".join(lines))
