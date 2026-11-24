@@ -1,0 +1,10 @@
+machine,runtime,device,precision,batch,run,mean_ms,p50_ms,p95_ms,fps,notes
+ubuntu,tensorrt,gpu,fp32,1,1,3.9094488000000003,3.738315,4.363604499999998,255.79053497260276,trtexec latencyMs (H2D+compute+D2H)
+ubuntu,tensorrt,gpu,fp16,1,1,1.99013116,1.93356,1.9982799999999998,502.47944462112736,trtexec latencyMs (H2D+compute+D2H)
+ubuntu,tensorrt,gpu,int8,1,1,1.2690491000000002,1.21707,1.259085,787.991575739662,trtexec latencyMs (H2D+compute+D2H)
+ubuntu,tensorrt,gpu,fp32,1,2,3.90667,3.73523,4.3547385,255.97247783918272,trtexec latencyMs (H2D+compute+D2H)
+ubuntu,tensorrt,gpu,fp16,1,2,1.9860829600000003,1.928925,1.996533,503.5036401500569,trtexec latencyMs (H2D+compute+D2H)
+ubuntu,tensorrt,gpu,int8,1,2,1.2663332,1.21509,1.2513055,789.6815782765547,trtexec latencyMs (H2D+compute+D2H)
+ubuntu,tensorrt,gpu,fp32,1,3,3.89349204,3.73193,4.3581725,256.8388453672041,trtexec latencyMs (H2D+compute+D2H)
+ubuntu,tensorrt,gpu,fp16,1,3,1.9841357200000003,1.92691,1.9973954999999999,503.99778095825013,trtexec latencyMs (H2D+compute+D2H)
+ubuntu,tensorrt,gpu,int8,1,3,1.2711032400000002,1.21802,1.2633874999999999,786.71815831419,trtexec latencyMs (H2D+compute+D2H)
